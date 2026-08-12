@@ -4,6 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Permit HTTP update endpoints for explicitly enabled local testing builds. -->
+    <bool name="config_allow_http_update_server">false</bool>
+
     <!-- Base background of the header card. -->
     <color name="brand_primary">#7f9687</color>
 

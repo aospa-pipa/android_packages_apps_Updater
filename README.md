@@ -49,6 +49,11 @@ from `ro.aospa.version`.
 
 Additional attributes are ignored.
 
+For production, the server URL must use HTTPS. To test against a local HTTP
+server, set `config_allow_http_update_server` to `true` in a product resource
+overlay. This is disabled by default and also controls the app's cleartext
+traffic policy.
+
 
 Build with Android Studio
 -------------------------

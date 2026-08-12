@@ -5,6 +5,7 @@
 package org.lineageos.updater.data.source.network
 
 import android.content.Context
+import android.net.Uri
 import kotlinx.serialization.json.Json
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -19,8 +20,10 @@ class UpdatesNetworkDataSource(private val context: Context) {
             val base = DeviceInfoUtils.updaterUri.trim().ifEmpty {
                 context.getString(R.string.updater_server_url)
             }
-            require(base.startsWith("https://")) {
-                "Update server URL must use HTTPS: $base"
+            val scheme = Uri.parse(base).scheme?.lowercase()
+            val allowHttp = context.resources.getBoolean(R.bool.config_allow_http_update_server)
+            require(scheme == "https" || (allowHttp && scheme == "http")) {
+                "Update server URL must use HTTPS${if (allowHttp) " or HTTP" else ""}: $base"
             }
             return base
                 .replace("{device}", DeviceInfoUtils.device)
