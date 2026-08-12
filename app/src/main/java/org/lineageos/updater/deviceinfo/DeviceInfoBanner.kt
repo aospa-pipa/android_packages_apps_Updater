@@ -9,11 +9,8 @@ import android.content.res.Configuration
 import android.icu.text.DateFormat
 import android.icu.util.TimeZone
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -22,11 +19,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.android.settingslib.spa.debug.UiModePreviews
 import com.android.settingslib.spa.framework.theme.SettingsDimension
-import com.android.settingslib.spa.framework.theme.SettingsRadius
 import com.android.settingslib.spa.framework.theme.SettingsShape.CornerExtraLarge1
 import com.android.settingslib.spa.framework.theme.SettingsTheme
-import org.lineageos.updater.deviceinfo.actions.DeviceInfoActionButtons
-import org.lineageos.updater.deviceinfo.actions.DeviceInfoTvAction
 import org.lineageos.updater.util.StringUtil
 import java.util.Date
 
@@ -63,9 +57,6 @@ fun DeviceInfoBanner(
     securityPatch: String,
     modifier: Modifier = Modifier,
 ) {
-    val uiMode = LocalConfiguration.current.uiMode
-    val isTv = (uiMode and Configuration.UI_MODE_TYPE_MASK) == Configuration.UI_MODE_TYPE_TELEVISION
-
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -77,22 +68,8 @@ fun DeviceInfoBanner(
             buildDate = buildDate,
             securityPatch = securityPatch,
             modifier = Modifier.fillMaxWidth(),
-            shape = if (isTv) {
-                CornerExtraLarge1
-            } else {
-                CornerExtraLarge1.copy(
-                    bottomStart = CornerSize(SettingsRadius.extraSmall2),
-                    bottomEnd = CornerSize(SettingsRadius.extraSmall2),
-                )
-            },
+            shape = CornerExtraLarge1,
         )
-
-        if (!isTv) {
-            Spacer(modifier = Modifier.height(SettingsDimension.paddingTiny))
-            DeviceInfoActionButtons()
-        } else {
-            DeviceInfoTvAction()
-        }
     }
 }
 

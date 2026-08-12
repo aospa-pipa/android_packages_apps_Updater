@@ -57,7 +57,6 @@
     <string name="menu_stream_updates_summary">பதிவிறக்குகையில் நிறுவு. ஏற்றுமதிக்குச் சேமிக்க முடக்குக.</string>
     <string name="menu_delete_update">நீக்கு</string>
     <string name="menu_export_update">இற்றையேற்று</string>
-    <string name="menu_view_downloads"><xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g> பதிவிறக்கில்காண்க</string>
     <string name="menu_metered_network_warning">அளவிடப்பட்ட பிணைய எச்சரிக்கை</string>
     <string name="menu_metered_network_warning_summary">அலைத்தரவுப் பதிவிறக்கும்முன் எச்சரி</string>
     <string name="menu_ab_perf_mode">இற்றைமுன்னுரிமை</string>
@@ -74,14 +73,10 @@
     <string name="header_android_version">ஆண்ட்ராய்டு <xliff:g id="version" example="16">%1$s</xliff:g></string>
     <string name="build_date">கட்டமைப்பு நாள்</string>
     <string name="security_update">பாதுகாப்பு இற்றை</string>
-    <string name="show_changelog">அண்மை மாற்றம்</string>
-    <string name="report_issues">சிக்கல் சாற்று</string>
-    <string name="header_review_updates">இற்றையை, அண்மை மாற்றம் ஆகியவற்றை மதிப்பாய்வு செய்</string>
-    <string name="found_bug">வழுகண்டீரா? எமது வழு அறிக்கை வழிகாட்டிமூலம் அறிவி:</string>
     <string name="updates_zero_state_title">இற்றை எதுவுமில்லை</string>
     <string name="updates_zero_state_description">இக்கருவியின் புதியகட்டமைப்புக் கிடைக்கையில் இங்குத் தோன்றும்.</string>
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_update_size">இற்றையளவு: <xliff:g id="size" example="1.34 GB">%1$s</xliff:g></string>
     <string name="list_security_update">பாதுகாப்பு இற்றை: <xliff:g id="date" example="Jan 2026">%1$s</xliff:g></string>
     <string name="list_major_android_upgrade">முதன்மை ஆண்ட்ராய்டு மேம்பாடு</string>

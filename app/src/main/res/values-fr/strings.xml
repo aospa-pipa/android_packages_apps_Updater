@@ -58,7 +58,6 @@
     <string name="menu_stream_updates_summary">Installer les mises à jour pendant leur téléchargement. Désactiver cette option pour enregistrer les paquets de mise à jour en vue de leur exportation.</string>
     <string name="menu_delete_update">Supprimer</string>
     <string name="menu_export_update">Exporter la mise à jour</string>
-    <string name="menu_view_downloads">Voir sur les téléchargements de <xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g></string>
     <string name="menu_metered_network_warning">Avertissement de réseau forfaitaire</string>
     <string name="menu_metered_network_warning_summary">Avertir avant de télécharger sur les données mobiles</string>
     <string name="menu_ab_perf_mode">Privilégier le processus de mise à jour</string>
@@ -75,14 +74,10 @@
     <string name="header_android_version">Android <xliff:g id="version" example="16">%1$s</xliff:g></string>
     <string name="build_date">Date de compilation</string>
     <string name="security_update">Mise à jour de sécurité</string>
-    <string name="show_changelog">Modifications récentes</string>
-    <string name="report_issues">Signaler les bugs</string>
-    <string name="header_review_updates">Vérifier les mises à jour et les modifications récentes sur</string>
-    <string name="found_bug">Vous avez trouvé un bug ? Signalez-le avec notre guide de rapport de bug :</string>
     <string name="updates_zero_state_title">Aucune mise à jour disponible</string>
     <string name="updates_zero_state_description">Les nouvelles versions pour cet appareil apparaîtront ici quand elles seront disponibles.</string>
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_update_size">Taille de la mise à jour : <xliff:g id="size" example="1.34 GB">%1$s</xliff:g></string>
     <string name="list_security_update">Mise à jour de sécurité : <xliff:g id="date" example="Jan 2026">%1$s</xliff:g></string>
     <string name="list_major_android_upgrade">Mise à jour majeure d\'Android</string>

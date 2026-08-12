@@ -22,11 +22,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.android.settingslib.spa.debug.UiModePreviews
 import com.android.settingslib.spa.framework.theme.SettingsSpace
 import com.android.settingslib.spa.framework.theme.SettingsTheme
+import org.lineageos.updater.R
 
 private val IconSize = 96.dp
 
@@ -36,8 +38,6 @@ fun UpdateZeroStatePreference(
     text: String = "",
     description: String = "",
 ) {
-    val colorScheme = MaterialTheme.colorScheme
-
     Column(
         modifier = modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -46,7 +46,7 @@ fun UpdateZeroStatePreference(
             imageVector = Icons.Filled.Verified,
             contentDescription = null,
             modifier = Modifier.size(IconSize),
-            tint = colorScheme.primary,
+            tint = colorResource(R.color.brand_pattern),
         )
         Column(
             modifier = Modifier.padding(

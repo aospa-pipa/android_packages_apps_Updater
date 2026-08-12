@@ -26,7 +26,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.toArgb
@@ -254,8 +253,6 @@ fun UpdaterCard(
                             .width(markWidth)
                             .alignBy { it.measuredHeight },
                         contentScale = ContentScale.FillWidth,
-                        // Brand guide: "Use white when on dark backgrounds".
-                        colorFilter = ColorFilter.tint(onBrandColor),
                     )
 
                     Spacer(modifier = Modifier.width(markWidth * VERSION_MARK_SPACING_RATIO))
@@ -279,7 +276,7 @@ fun UpdaterCard(
                     horizontalArrangement = Arrangement.spacedBy(SettingsDimension.paddingLarge),
                 ) {
                     InfoColumn(
-                        label = stringResource(R.string.header_build_version, buildVersion),
+                        label = stringResource(R.string.brand_name),
                         value = stringResource(R.string.header_android_version, androidVersion),
                     )
                     InfoColumn(

@@ -267,11 +267,6 @@ private fun UpdateItemIdleCollapsedPreview() {
                     primary = UpdateAction(
                         type = UpdateActionType.START_DOWNLOAD,
                     ),
-                    overflow = listOf(
-                        UpdateAction(
-                            type = UpdateActionType.VIEW_DOWNLOADS,
-                        ),
-                    ),
                 ),
             ),
             expanded = false,
@@ -336,11 +331,6 @@ private fun UpdateItemDownloadingPreview() {
                     ),
                     secondary = UpdateAction(
                         type = UpdateActionType.CANCEL_DOWNLOAD,
-                    ),
-                    overflow = listOf(
-                        UpdateAction(
-                            type = UpdateActionType.VIEW_DOWNLOADS,
-                        ),
                     ),
                 ),
             ),

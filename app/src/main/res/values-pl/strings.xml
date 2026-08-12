@@ -58,7 +58,6 @@
     <string name="menu_stream_updates_summary">Instaluj aktualizacje podczas pobierania. Wyłącz tę opcję, aby zapisać pakiety aktualizacji w celu eksportu.</string>
     <string name="menu_delete_update">Usuń</string>
     <string name="menu_export_update">Wyślij aktualizację</string>
-    <string name="menu_view_downloads">Zobacz <xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g> Pobrane</string>
     <string name="menu_metered_network_warning">Ostrzeżenie o sieci z pomiarem</string>
     <string name="menu_metered_network_warning_summary">Ostrzegaj przed pobraniem poprzez dane komórkowe</string>
     <string name="menu_ab_perf_mode">Nadaj wyższy priorytet procesowi aktualizacji</string>
@@ -75,14 +74,10 @@
     <string name="header_android_version">Android <xliff:g id="version" example="16">%1$s</xliff:g></string>
     <string name="build_date">Data wydania</string>
     <string name="security_update">Aktualizacje bezpieczeństwa</string>
-    <string name="show_changelog">Ostatnie zmiany</string>
-    <string name="report_issues">Zgłoś błąd</string>
-    <string name="header_review_updates">Przejrzyj aktualizacje i ostatnie zmiany</string>
-    <string name="found_bug">Jakiś błąd? Zgłoś go z naszym przewodnikiem zgłaszania błędów:</string>
     <string name="updates_zero_state_title">Brak dostępnych aktualizacji</string>
     <string name="updates_zero_state_description">Nowe kompilacje dla tego urządzenia pojawią się tutaj, gdy będą dostępne.</string>
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_update_size">Rozmiar aktualizacji: <xliff:g id="size" example="1.34 GB">%1$s</xliff:g></string>
     <string name="list_security_update">Aktualizacje bezpieczeństwa: <xliff:g id="date" example="Jan 2026">%1$s</xliff:g></string>
     <string name="list_major_android_upgrade">Znacząca aktualizacja systemu Android</string>

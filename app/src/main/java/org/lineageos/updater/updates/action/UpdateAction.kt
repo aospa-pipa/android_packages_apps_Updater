@@ -25,11 +25,7 @@ enum class UpdateActionType(@param:StringRes val titleRes: Int) {
     OPEN_GUIDE(R.string.action_open_guide),
 
     DELETE(R.string.menu_delete_update),
-    EXPORT(R.string.menu_export_update),
-    VIEW_DOWNLOADS(R.string.menu_view_downloads) {
-        override fun title(context: Context) =
-            context.getString(titleRes, context.getString(R.string.brand_name))
-    };
+    EXPORT(R.string.menu_export_update);
 
     open fun title(context: Context) = context.getString(titleRes)
 }

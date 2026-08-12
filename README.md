@@ -43,8 +43,9 @@ The `files[0].ota_property_files` optional attribute is the `ota-property-files`
 The `files[0].sha256` attribute is a sha256 of the OTA update.  
 The `files[0].size` attribute is the size of the update expressed in bytes.  
 The `files[0].url` attribute is the URL of the file to be downloaded.  
-The `type` attribute is the string to be compared with the `ro.lineage.releasetype` property.  
-The `version` attribute is the string to be compared with the `ro.lineage.build.version` property.  
+The `type` attribute is the string to be compared with the `ro.aospa.build.variant` property.
+The `version` attribute is displayed as the build version; the current build version is read
+from `ro.aospa.version`.
 
 Additional attributes are ignored.
 

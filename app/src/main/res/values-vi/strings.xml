@@ -57,7 +57,6 @@
     <string name="menu_stream_updates_summary">Cài đặt các bản cập nhật trong khi tải xuống. Vô hiệu hóa để lưu các gói cập nhật để xuất.</string>
     <string name="menu_delete_update">Xóa</string>
     <string name="menu_export_update">Xuất bản cập nhật</string>
-    <string name="menu_view_downloads">Xem trên <xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g> Tải xuống</string>
     <string name="menu_metered_network_warning">Cảnh báo mạng được đo lường</string>
     <string name="menu_metered_network_warning_summary">Cảnh báo trước khi tải xuống qua dữ liệu di động</string>
     <string name="menu_ab_perf_mode">Ưu tiên quá trình cập nhật</string>
@@ -74,14 +73,10 @@
     <string name="header_android_version">Android <xliff:g id="version" example="16">%1$s</xliff:g></string>
     <string name="build_date">Ngày dựng</string>
     <string name="security_update">Cập nhật bảo mật</string>
-    <string name="show_changelog">Thay đổi gần đây</string>
-    <string name="report_issues">Báo cáo sự cố</string>
-    <string name="header_review_updates">Xem lại các bản cập nhật và thay đổi gần đây trên</string>
-    <string name="found_bug">Phát hiện lỗi? Hãy báo cáo lỗi bằng hướng dẫn báo cáo lỗi của chúng tôi:</string>
     <string name="updates_zero_state_title">Không có bản cập nhật nào</string>
     <string name="updates_zero_state_description">Các bản cập nhật mới cho thiết bị này sẽ xuất hiện ở đây khi có sẵn.</string>
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Paranoid Android <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_update_size">Kích thước cập nhật: <xliff:g id="size" example="1.34 GB">%1$s</xliff:g></string>
     <string name="list_security_update">Cập nhật bảo mật: <xliff:g id="date" example="Jan 2026">%1$s</xliff:g></string>
     <string name="list_major_android_upgrade">Bản nâng cấp Android chính</string>

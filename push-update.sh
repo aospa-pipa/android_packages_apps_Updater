@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-updates_dir=/data/lineageos_updates
+updates_dir=/data/aospa_updates
 
 # $1 = ZIP
 # $2 = UNVERIFIED (optional)
@@ -12,7 +12,7 @@ if [ ! -f "$1" ]; then
    echo "Usage: $0 ZIP [UNVERIFIED] [SERIAL]"
    echo "Push ZIP to $updates_dir and add it to Updater"
    echo
-   echo "The name of ZIP is assumed to have lineage-VERSION-DATE-TYPE-* as format"
+   echo "The name of ZIP is assumed to have aospa-MAJOR-MINOR-DEVICE-DATE.zip as format"
    echo "If UNVERIFIED is set, the app will verify the update"
    exit
 fi
@@ -44,11 +44,11 @@ else
     status=2
 fi
 
-# Assume lineage-VERSION-DATE-TYPE-*.zip
+# Assume aospa-MAJOR-MINOR-DEVICE-DATE.zip
 zip_name=`basename "$zip_path"`
 id=`echo "$zip_name" | sha1sum | cut -d' ' -f1`
-version=`echo "$zip_name" | cut -d'-' -f2`
-type=`echo "$zip_name" | cut -d'-' -f4`
+version=`echo "$zip_name" | cut -d'-' -f2-3`
+type=`$ADB shell getprop ro.aospa.build.variant | tr -d '\r'`
 timestamp=`unzip -p "$zip_path" META-INF/com/android/metadata | grep post-timestamp | cut -d'=' -f2`
 os_patch_level=`unzip -p "$zip_path" META-INF/com/android/metadata | grep post-security-patch-level | cut -d'=' -f2`
 os_sdk_level=`unzip -p "$zip_path" META-INF/com/android/metadata | grep post-sdk-level | cut -d'=' -f2`
